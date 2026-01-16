@@ -1,0 +1,7 @@
+{
+  "name": "Vias_Administracion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
