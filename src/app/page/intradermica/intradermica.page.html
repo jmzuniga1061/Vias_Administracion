@@ -1,0 +1,109 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button id="menu-trigger" class="menu-btn">
+  MENÚ <ion-icon slot="end" name="caret-down-sharp"></ion-icon>
+</ion-button>
+
+<ion-popover trigger="menu-trigger" dismiss-on-select="true">
+  <ng-template>
+    <ion-content class="ion-no-padding">
+      <ion-list lines="none">
+        <ion-item button routerLink="/inicio" detail="false">
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/parenterales" detail="false">
+          <ion-label>Vías Parenterales</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/intradermica" detail="false">
+          <ion-label>Vía Intradérmica</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Vía Intradérmica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="hero-image" style="background-image: url('assets/images/hero-intradermica.jpg');">
+  </div>
+
+  <div class="content-container ion-padding">
+    
+    <section class="definition-section">
+      <div class="title-wrapper">
+        <div class="vertical-bar"></div>
+        <h2>¿Qué es?</h2>
+      </div>
+      <p>
+        La vía intradérmica es una forma de administración de medicamentos en la que el fármaco se deposita directamente en la dermis, es decir, en la capa media de la piel que se encuentra entre la epidermis (capa superficial) y el tejido subcutáneo.
+        Se utiliza principalmente para fines diagnósticos, inmunológicos y de sensibilización, más que para tratamientos de gran volumen.
+      </p>
+    </section>
+
+    <section class="comparison-section">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6">
+            <h3 class="green-title">Ventajas</h3>
+            <ul class="clean-list">
+              <li>Permite observar reacciones locales visibles</li>
+              <li>Requiere pequeño volumen</li>
+              <li>Es una técnica económica</li>
+              <li>Resultados fácilmente evaluables en pruebas diagnósticas</li>
+            </ul>
+          </ion-col>
+          
+          <ion-col size="12" size-md="6">
+            <h3 class="green-title">Desventajas</h3>
+            <ul class="clean-list">
+              <li>No sirve para grandes volúmenes</li>
+              <li>Requiere técnica precisa</li>
+              <li>Riesgo de error si no se coloca exactamente en la dermis</li>
+            </ul>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+
+    <section class="details-section">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6">
+            <div class="title-wrapper">
+              <div class="vertical-bar"></div>
+              <h2>Tipos de Agujas Y material</h2>
+            </div>
+            <ul class="clean-list">
+              <li>Jeringa de 1 ml</li>
+              <li>Aguja calibre 26-27, corta y fina</li>
+              <li>Volumen máximo: 0.1 ml</li>
+            </ul>
+            <div class="syringe-img">
+               <img src="assets/images/jeringa-diag.png" alt="Jeringa 1ml">
+            </div>
+          </ion-col>
+
+          <ion-col size="12" size-md="6">
+            <div class="title-wrapper">
+              <div class="vertical-bar"></div>
+              <h2>Lugares mas Utilizados</h2>
+            </div>
+            <ul class="clean-list">
+              <li>Cara anterior del antebrazo (zona media)</li>
+              <li>Región escapular superior</li>
+              <li>Parte superior del tórax, por debajo de la clavícula</li>
+            </ul>
+            <p class="note-text">
+              Son zonas elegidas porque la piel es fina, accesible y permite observar fácilmente la reacción.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+
+  </div>
+</ion-content>

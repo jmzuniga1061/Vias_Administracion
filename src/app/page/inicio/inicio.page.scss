@@ -1,0 +1,36 @@
+ion-toolbar {
+  /* Aumentamos un poco la altura para que se vea robusto como en la imagen */
+  --min-height: 70px;
+  
+  ion-title {
+    font-weight: 800; /* Letra gruesa */
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+
+  .menu-btn {
+    font-weight: 700;
+    font-size: 0.9rem;
+    --padding-start: 10px;
+    text-transform: uppercase;
+    
+    ion-icon {
+      font-size: 0.8rem;
+      margin-left: 5px;
+      margin-bottom: 2px; /* Ajuste visual ligero */
+    }
+  }
+}
+
+ion-content {
+  /* Fondo blanco puro según la imagen */
+  --background: #ffffff;
+}
+
+/* Opcional: Si quieres centrar algo en el futuro */
+.empty-state-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}

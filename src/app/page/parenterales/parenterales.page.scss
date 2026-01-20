@@ -1,0 +1,101 @@
+/* Estilos Generales para Titulos con Barra */
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+  .vertical-bar {
+    width: 6px;
+    height: 30px;
+    background-color: var(--ion-color-primary);
+    margin-right: 10px;
+    border-radius: 2px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+}
+
+.description-text {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Header Customizado */
+ion-toolbar {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  
+  .header-content {
+    color: white;
+    h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+    p { margin: 5px 0 0; font-size: 0.8rem; opacity: 0.9; }
+  }
+}
+
+/* Grid de Imagenes (Cards) */
+.types-section {
+  margin-bottom: 3rem;
+  
+  .centered-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .img-card {
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(55, 96, 172, 0.9), transparent);
+      padding: 20px 10px 10px;
+      
+      span {
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* Materiales y Listas */
+.custom-list {
+  li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 0.95rem;
+  }
+}
+
+.materials-img-container img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+}
+
+/* Procedimientos */
+.custom-ordered-list {
+  li {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+}

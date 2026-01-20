@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button id="menu-trigger" class="menu-btn">
+  MENÚ <ion-icon slot="end" name="caret-down-sharp"></ion-icon>
+</ion-button>
+
+<ion-popover trigger="menu-trigger" dismiss-on-select="true">
+  <ng-template>
+    <ion-content class="ion-no-padding">
+      <ion-list lines="none">
+        <ion-item button routerLink="/inicio" detail="false">
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/parenterales" detail="false">
+          <ion-label>Vías Parenterales</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/intradermica" detail="false">
+          <ion-label>Vía Intradérmica</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+    </ion-buttons>
+    
+    <ion-title class="ion-text-center">
+      Vias de administracion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="empty-state-container">
+    </div>
+</ion-content>

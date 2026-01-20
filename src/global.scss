@@ -35,3 +35,14 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* variables.scss */
+:root {
+  --ion-color-primary: #1A7E8F; /* El color Teal del encabezado */
+  --ion-color-primary-rgb: 26, 126, 143;
+  --ion-color-primary-contrast: #ffffff;
+  
+  --ion-color-secondary: #2dd36f; /* El verde de las ventajas */
+  
+  --app-font-family: 'Inter', sans-serif; /* O la fuente que uses */
+}

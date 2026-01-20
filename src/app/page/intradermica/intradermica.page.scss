@@ -1,0 +1,84 @@
+/* Reutilizamos estilos base como .title-wrapper y .vertical-bar del ejemplo anterior 
+   (Idealmente esto iría en global.scss, pero lo incluyo aquí para aislamiento) */
+
+.hero-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-container {
+  margin-top: -20px; /* Ligero efecto overlay si el fondo es blanco */
+  background: white;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  min-height: 500px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  
+  .vertical-bar {
+    width: 6px;
+    height: 28px;
+    background-color: var(--ion-color-primary);
+    margin-right: 10px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 0;
+  }
+}
+
+p {
+  color: #444;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+/* Sección Ventajas/Desventajas */
+.comparison-section {
+  margin-top: 2rem;
+  
+  .green-title {
+    color: #2dd36f; /* Verde brillante tipo Ionic */
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.clean-list {
+  padding-left: 1.2rem;
+  li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.9rem;
+  }
+}
+
+/* Sección Material */
+.details-section {
+  margin-top: 3rem;
+}
+
+.syringe-img {
+  text-align: center;
+  margin-top: 20px;
+  
+  img {
+    max-width: 200px;
+    transform: rotate(-15deg); /* Para darle el ángulo de la imagen */
+  }
+}
+
+.note-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
