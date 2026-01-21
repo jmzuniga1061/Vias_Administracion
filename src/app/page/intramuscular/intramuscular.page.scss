@@ -1,0 +1,152 @@
+// Variables de colores basadas en la imagen
+$primary-teal: #1e7e8d; // El color del header y acentos
+$text-dark: #333333;
+$title-green: #4cd964; // Verde brillante de "Ventajas"
+$bg-light: #ffffff;
+
+ion-toolbar {
+  --background: #{$primary-teal};
+  --color: white;
+  
+  ion-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  ion-button {
+    font-weight: 600;
+    --color: white;
+    text-transform: uppercase;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 350px; // Ajustable según necesidad
+  // REEMPLAZA ESTO CON TU IMAGEN REAL
+  background-image: url("/assets/intramuscular-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+
+  // El degradado oscuro en la parte inferior para leer el texto
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.85) 90%);
+  }
+
+  .hero-content {
+    position: relative; // Para estar encima del overlay
+    z-index: 2;
+    padding: 20px 30px 40px 30px;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .title-accent {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      
+      h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-left: 5px solid $primary-teal; // La barrita azul al lado de "¿Qué es?"
+        padding-left: 15px;
+        line-height: 1.2;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      opacity: 0.9;
+      margin: 0;
+    }
+  }
+}
+
+.content-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.info-col {
+  padding: 20px;
+}
+
+// Estilos para títulos verdes (Ventajas/Desventajas)
+.green-title {
+  color: $title-green;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+// Estilos para títulos oscuros con barra lateral
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .bar-accent {
+    width: 5px;
+    height: 30px;
+    background-color: $primary-teal;
+    margin-right: 15px;
+  }
+
+  h2 {
+    color: $text-dark;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+  
+  li {
+    color: $text-dark;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    list-style-type: disc; // Opcional: podrías usar circle o square
+  }
+}
+
+.note-text {
+  color: $text-dark;
+  font-size: 0.95rem;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.material-content {
+  position: relative;
+  
+  // Para posicionar la jeringa si decides ponerla
+  .floating-syringe {
+    display: none; // Oculto en móvil por defecto
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      width: 150px;
+      opacity: 0.8;
+      transform: rotate(-15deg);
+    }
+  }
+}
