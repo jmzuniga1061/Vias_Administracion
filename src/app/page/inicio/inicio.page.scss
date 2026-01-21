@@ -1,9 +1,8 @@
 ion-toolbar {
-  /* Aumentamos un poco la altura para que se vea robusto como en la imagen */
   --min-height: 70px;
   
   ion-title {
-    font-weight: 800; /* Letra gruesa */
+    font-weight: 800;
     font-size: 1.3rem;
     letter-spacing: 0.5px;
   }
@@ -11,26 +10,36 @@ ion-toolbar {
   .menu-btn {
     font-weight: 700;
     font-size: 0.9rem;
-    --padding-start: 10px;
     text-transform: uppercase;
-    
-    ion-icon {
-      font-size: 0.8rem;
-      margin-left: 5px;
-      margin-bottom: 2px; /* Ajuste visual ligero */
-    }
   }
 }
 
 ion-content {
-  /* Fondo blanco puro según la imagen */
-  --background: #ffffff;
+  --background: #ffffff; /* Aseguramos fondo blanco */
 }
 
-/* Opcional: Si quieres centrar algo en el futuro */
-.empty-state-container {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+.category-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.category-card {
+  height: 450px; /* Altura de las tarjetas de imagen */
+  border-radius: 30px; /* Esquinas muy redondeadas según la imagen */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:active {
+    transform: scale(0.97); /* Efecto de pulsación al hacer clic */
+  }
+}
+
+/* Espaciado responsivo */
+ion-col {
+  padding: 30px;
 }
