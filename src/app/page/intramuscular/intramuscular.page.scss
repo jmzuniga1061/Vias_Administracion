@@ -1,0 +1,100 @@
+// Definición de colores locales para mantener coherencia médica
+:host {
+  --teal-medical: #1a7f8a;
+  --green-medical: #4ec38a;
+  --dark-grey: #333333;
+}
+
+ion-toolbar {
+  --background: var(--teal-medical);
+  --color: white;
+}
+
+// Estilo de la cabecera con fondo oscurecido
+.hero-section {
+  /* El linear-gradient aplica una capa oscura sobre la foto para que el texto blanco se lea bien */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+              url('/assets/images/intramuscular.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+  }
+
+// Títulos con barra lateral decorativa
+.section-title-line {
+  border-left: 5px solid var(--green-medical);
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+
+  &.dark {
+    border-left-color: var(--teal-medical);
+    color: var(--dark-grey);
+    margin-top: 25px;
+  }
+}
+
+.title-green {
+  color: var(--green-medical);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+// Listas personalizadas con puntos de color médico
+.custom-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #444;
+
+    &::before {
+      content: "•";
+      color: var(--teal-medical);
+      font-weight: bold;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+  }
+}
+
+.caption-text {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+// Ajuste para el botón de regreso
+ion-back-button {
+  --color: white;
+}
