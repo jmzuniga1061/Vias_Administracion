@@ -22,4 +22,8 @@ export const routes: Routes = [
     path: 'intradermica',
     loadComponent: () => import('./page/intradermica/intradermica.page').then( m => m.IntradermicaPage)
   },
+  {
+    path: 'intravenosa',
+    loadComponent: () => import('./page/intravenosa/intravenosa.page').then( m => m.IntravenosaPage)
+  },
 ];
