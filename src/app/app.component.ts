@@ -11,6 +11,7 @@ import { home, medkit, body, fitness } from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
+<<<<<<< HEAD
   templateUrl: 'app.component.html', // <-- ESTO DEBE DECIR app.component.html
   standalone: true,
   imports: [
@@ -19,6 +20,11 @@ import { home, medkit, body, fitness } from 'ionicons/icons';
     IonMenu, IonContent, IonList, IonMenuToggle, 
     IonHeader, IonToolbar, IonTitle, IonListHeader
   ],
+=======
+  templateUrl: 'app.component.html',
+  standalone: true,
+  imports: [IonApp, IonRouterOutlet],
+>>>>>>> main
 })
 export class AppComponent { // <-- ESTA CLASE ES LA QUE BUSCA EL ERROR
   
